@@ -41,7 +41,7 @@ Before beginning the process of setting up this pipeline on your local system, m
 # Setup
 To setup this pipeline, clone this github repository:
 ```
-git clone https://github.com/DiandraDaum/EvoBindMultimer.git
+git clone https://github.com/patrickbryant1/EvoBind-multimer.git
 ```
 \
 Then do
@@ -67,9 +67,6 @@ This script can be run by simply doing:
 ```
 bash design_local.sh
 ```
-
-## Adversarial evaluation with AlphaFold-multimer
-See **src/design/AFM_eval** for instructions
 
 # Citation
 If you use EvoBindMultimer in your research, please cite
