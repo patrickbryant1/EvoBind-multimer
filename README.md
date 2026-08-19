@@ -1,9 +1,10 @@
 # EvoBindMultimer
 
-**de novo design of peptide molecular glues with EvoBind-multimer**
+**De novo design of macrocyclic molecular glues with EvoBind-multimer**
 \
 \
-EvoBind-multimer (EBM) designs novel linear and **cyclic** peptides bridging together two target proteins, only from their amino acid sequences. This makes it possible to design peptide molecular glues that create **ternary complexes**. It is not necessary to specify any target residues within the protein sequence or the length of the peptide (although this is possible).
+EvoBind-multimer (EBM) designs novel linear and **cyclic** peptides bridging two target proteins, only from their amino acid sequences. This makes it possible to design peptide molecular glues that create **ternary complexes**. It is not necessary to specify any target residues within the protein sequence or the length of the peptide (although this is possible).
+\
 \
 We demonstrate molecular glue design with experimental validation between an E3 ligase and a target protein for the degradation of the "undruggable" oncoproteins KRAS and BRD4.
 \
@@ -19,7 +20,7 @@ EvoBind-multimer accounts for adaptation of the receptor interface structures to
   <br>
   <em>The animation illustrates the real-time design trajectory: the target protein KRAS (grey mesh) and the E3 ligase VHL (green) dynamically adapt their interface conformation as the peptide molecular glue (blue) sequence and structure are generated simultaneously.</em>
 </p>
-\
+
 
 # Table of Contents
 1.  [EvoBindMultimer](#evobindmultimer)
