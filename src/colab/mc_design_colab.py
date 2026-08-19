@@ -34,7 +34,6 @@ from absl import flags
 from absl import logging
 from alphafold.common import protein
 from alphafold.common import residue_constants
-from alphafold.data import msaonly
 from alphafold.data import foldonly
 from alphafold.data import pipeline
 from alphafold.data import templates
@@ -454,9 +453,9 @@ def main(target_1_fasta, target_2_fasta, target_1_if_residues, target_2_if_resid
 
   logging.info('Have %d models: %s', len(model_runners),
                  list(model_runners.keys()))
-  
 
-  
+
+
   random_seed = random.randrange(sys.maxsize)
   data_pipeline = foldonly.FoldDataPipeline()
 
@@ -475,4 +474,3 @@ def main(target_1_fasta, target_2_fasta, target_1_if_residues, target_2_if_resid
         num_iterations=num_iterations,
         start_sequence=start_sequence,
         cyclic_offset=cyclic_offset)
-
