@@ -11,6 +11,10 @@ EvoBindMultimer (EBM) designs novel linear and **cyclic** peptides bridging toge
 \
 EvoBindMultimer accounts for adaptation of the receptor interface structures to the peptide being designed during optimisation: **sequence and structure is generated simultaneously**. This consideration of flexibility is crucial for binding. EvoBindMutlimer is an adaptation of EvoBind2, the first protocol that only relies on a protein sequence to design a binder with experimentally verified cyclic design capacity.
 
+<p align="center">
+  <img alt="Design" src="./vhl_kras_design.gif" width="45%">
+</p>
+
 
 # Table of Contents
 1.  [EvoBindMultimer](#evobindmultimer)
