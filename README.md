@@ -3,18 +3,22 @@
 **de novo design of peptide molecular glues with EvoBind-multimer**
 \
 \
-EvoBindMultimer (EBM) designs novel linear and **cyclic** peptides bridging together two target proteins, only from their amino acid sequences. This makes it possible to desing peptide molecular glues between an E3 ligase and a target protein to degrade. It is not necessary to specify any target residues within the protein sequence or the length of the binder (although this is possible).
+EvoBind-multimer (EBM) designs novel linear and **cyclic** peptides bridging together two target proteins, only from their amino acid sequences. This makes it possible to design peptide molecular glues that create **ternary complexes**. It is not necessary to specify any target residues within the protein sequence or the length of the peptide (although this is possible).
+\
+We demonstrate molecular glue design with experimental validation between an E3 ligase and a target protein for the degradation of the "undruggable" oncoproteins KRAS and BRD4.
 \
 \
 [Read more here]()
 \
 \
-EvoBindMultimer accounts for adaptation of the receptor interface structures to the peptide being designed during optimisation: **sequence and structure is generated simultaneously**. This consideration of flexibility is crucial for binding. EvoBindMutlimer is an adaptation of EvoBind2, the first protocol that only relies on a protein sequence to design a binder with experimentally verified cyclic design capacity.
-
-<p align="center">
-  <img alt="Design" src="./vhl_kras_design.gif">
-</p>
+EvoBind-multimer accounts for adaptation of the receptor interface structures to the peptide being designed during optimization: **sequence and structure is generated simultaneously**. This consideration of flexibility is crucial for binding. EvoBind-multimer is built on the ideas of [EvoBind2](https://github.com/patrickbryant1/EvoBind), the first protocol that only relies on a protein sequence to design a binder with experimentally verified cyclic design capacity.
 \
+\
+<p align="center">
+  <img alt="Design" src="./vhl_kras_design.gif" width="100%">
+  <br>
+  <em>The animation illustrates the real-time design trajectory: the target protein KRAS (grey mesh) and the E3 ligase VHL (green) dynamically adapt their interface conformation as the peptide molecular glue (blue) sequence and structure are generated simultaneously.</em>
+</p>
 \
 
 # Table of Contents
