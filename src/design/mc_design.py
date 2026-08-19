@@ -13,7 +13,7 @@
 # limitations under the License.
 
 """Full AlphaFold protein structure prediction script.
-Modified by Patrick Bryant to include MC search.
+Modified by Patrick Bryant to include MC search for ternary complex design.
 """
 import pdb
 import json
