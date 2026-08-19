@@ -14,11 +14,11 @@ We demonstrate molecular glue design with experimental validation between an E3 
 \
 EvoBind-multimer accounts for adaptation of the receptor interface structures to the peptide being designed during optimization: **sequence and structure is generated simultaneously**. This consideration of flexibility is crucial for binding. EvoBind-multimer is built on the ideas of [EvoBind2](https://github.com/patrickbryant1/EvoBind), the first protocol that only relies on a protein sequence to design a binder with experimentally verified cyclic design capacity.
 \
-\
+
 <p align="center">
   <img alt="Design" src="./vhl_kras_design.gif" width="100%">
   <br>
-  <em>The animation illustrates the real-time design trajectory: the target protein KRAS (grey mesh) and the E3 ligase VHL (green) dynamically adapt their interface conformation as the peptide molecular glue (blue) sequence and structure are generated simultaneously.</em>
+  <em>The animation illustrates the real-time design trajectory: the target protein KRAS (grey) and the E3 ligase VHL (green) dynamically adapt their interface conformation as the cyclic peptide molecular glue (blue) sequence and structure are generated simultaneously.</em>
 </p>
 
 
