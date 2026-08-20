@@ -1,10 +1,8 @@
 .DS_Store
 data/.DS_Store
 src/.DS_Store
-data/designs/.DS_Store
-data/designs/VHL_BRD4/.DS_Store
-data/designs/VHL_KRAS/.DS_Store
-data/designs/VHL_BRD4/cross_validation/.DS_Store
+data/test/.DS_Store
+data/test/VHL_BRD4/.DS_Store
+data/test/VHL_KRAS/.DS_Store
 src/design/.DS_Store
 src/design/alphafold/.DS_Store
-.DS_Store
