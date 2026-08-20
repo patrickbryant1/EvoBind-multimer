@@ -1,4 +1,4 @@
-# EvoBindMultimer
+# EvoBind-multimer
 
 **De novo design of macrocyclic molecular glues with EvoBind-multimer**
 \
@@ -22,7 +22,7 @@ EvoBind-multimer accounts for adaptation of the receptor interface structures to
 
 
 # Table of Contents
-1.  [EvoBindMultimer](#evobindmultimer)
+1.  [EvoBind-multimer](#evobindmultimer)
 2.  [LICENSE](#license)
 3.  [Colab](#colab)
 4.  [Computational requirements](#computational-requirements)
@@ -35,14 +35,14 @@ EvoBind-multimer accounts for adaptation of the receptor interface structures to
 
 
 # LICENSE
-EvoBindMultimer is based on AlphaFold2, which is available under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).  \
+EvoBind-multimer is based on AlphaFold2, which is available under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).  \
 The AlphaFold2 parameters are made available under the terms of the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode) and have not been modified. \
-The design protocol EvoBindMultimer is made available under the terms of the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/).
+The design protocol EvoBind-multimer is made available under the terms of the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/).
 \
 **You may not use these files except in compliance with the licenses.**
 
 # Colab
-It is possible to run EvoBindMultimer online in the [Google colab here](https://colab.research.google.com/github/DiandraDaum/EvoBindMultimer/blob/main/EvoBindMultimer.ipynb)
+It is possible to run EvoBind-multimer online in the [Google colab here](https://colab.research.google.com/github/DiandraDaum/EvoBindMultimer/blob/main/EvoBindMultimer.ipynb)
 
 # Computational requirements
 Before beginning the process of setting up this pipeline on your local system, make sure you have adequate computational resources. Make sure you have an **available GPU** as this will speed up the prediction process substantially compared to using a CPU. EvoBind2 assumes you have NVIDIA GPUs on your system, readily available. A Linux-based system is assumed.
@@ -78,7 +78,7 @@ bash design_local.sh
 ```
 
 # Citation
-If you use EvoBindMultimer in your research, please cite
+If you use EvoBind-multimer in your research, please cite
 
 [Brunner A., Wierbilowicz K., Daumiller D., Li Q., Karlsson K., Sangfelt O. and Bryan P. De novo design of macrocyclic molecular glues from protein sequences. bioRxiv 2026.06..; doi:]()
 
