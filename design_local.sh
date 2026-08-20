@@ -2,7 +2,7 @@
 
 #############INPUT PARAMETERS#############
 BASE=. #Change this depending on your local path
-DATADIR=$BASE/data # Input files path
+DATADIR=$BASE/data/test # Input files path
 ###IDS###
 ID1=VHL   # E3 ligase protein
 ID2=KRAS  # protein target to degrade
@@ -48,7 +48,7 @@ MSAS=${PAIRED_MSA},${BLOCKED_MSA} # Comma separated list of msa paths
 #########Step3: Design molecular glue#########
 ##### AF2 CONFIGURATION ####
 OUTDIR=$DATADIR/$ID1'_'$ID2/designs/$PEPTIDELENGTH
-PARAM=$BASE'/src/'
+PARAM=$BASE/src/
 PRESET='full_dbs' #Choose preset model configuration - no ensembling (full_dbs) and (reduced_dbs) or 8 model ensemblings (casp14).
 MAX_RECYCLES=8 #max_recycles (default=3)
 MODEL_NAME='model_1' #model_1_ptm
@@ -70,3 +70,5 @@ python3 $BASE/src/design/mc_design.py \
         --num_iterations=$NITER \
         --predict_only=False \
         --cyclic_offset=1 # remove this if not using cyclic offset
+
+echo Check your new designs here: $OUTDIR
