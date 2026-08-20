@@ -22,7 +22,7 @@ MSA2=$DATADIR/$ID1'_'$ID2/$ID2'.a3m'
 #Write MSAs for the two protein sequences
 HHBLITSDB=$BASE/data/uniclust30_2018_08/uniclust30_2018_08
 if test -f $MSA1; then
-	echo $MSA1 exists    
+	echo $MSA1 exists
 else
 	$BASE/hh-suite/build/bin/hhblits -i $ID1 -d $HHBLITSDB -E 0.001 -all -n 2 -oa3m $MSA1
 fi
@@ -37,9 +37,9 @@ if test -f $DATADIR/$ID1'_'$ID2/$ID1'_'$ID2'_blocked.a3m'; then
 else
         echo Making MSAs for $ID1 and $ID2
         #Pair MSAs
-        python3 $BASE/scr/pair_msas.py --a3m1 $MSA1 --a3m2 $MSA2 --max_gap_fraction 0.9 --outname $DATADIR/$ID1'_'$ID2/$ID1'_'$ID2'_paired.a3m'
+        python3 $BASE/src/design/pair_msas.py --a3m1 $MSA1 --a3m2 $MSA2 --max_gap_fraction 0.9 --outname $DATADIR/$ID1'_'$ID2/$ID1'_'$ID2'_paired.a3m'
         #Block diagonalize MSAs
-        python3 $BASE/scr/block_msas.py --a3m1 $MSA1 --a3m2 $MSA2 --max_gap_fraction 0.9 --outname $DATADIR/$ID1'_'$ID2/$ID1'_'$ID2'_blocked.a3m'
+        python3 $BASE/src/design/block_msas.py --a3m1 $MSA1 --a3m2 $MSA2 --max_gap_fraction 0.9 --outname $DATADIR/$ID1'_'$ID2/$ID1'_'$ID2'_blocked.a3m'
 fi
 PAIRED_MSA=$(ls $DATADIR/$ID1'_'$ID2/$ID1'_'$ID2'_paired.a3m')
 BLOCKED_MSA=$(ls $DATADIR/$ID1'_'$ID2/$ID1'_'$ID2'_blocked.a3m')
@@ -48,7 +48,7 @@ MSAS=${PAIRED_MSA},${BLOCKED_MSA} # Comma separated list of msa paths
 #########Step3: Design molecular glue#########
 ##### AF2 CONFIGURATION ####
 OUTDIR=$DATADIR/$ID1'_'$ID2/designs/$PEPTIDELENGTH
-PARAM=$BASE'/src/AF2/'
+PARAM=$BASE'/src/'
 PRESET='full_dbs' #Choose preset model configuration - no ensembling (full_dbs) and (reduced_dbs) or 8 model ensemblings (casp14).
 MAX_RECYCLES=8 #max_recycles (default=3)
 MODEL_NAME='model_1' #model_1_ptm
@@ -56,7 +56,7 @@ MODEL_NAME='model_1' #model_1_ptm
 mkdir -p $OUTDIR
 
 #Run the molecular glue design
-python3 $BASE/src/mc_design.py \
+python3 $BASE/src/design/mc_design.py \
         --target_1_fasta=$FASTA1 \
         --target_2_fasta=$FASTA2 \
         --target_1_if_residues=$IFRES1 \
