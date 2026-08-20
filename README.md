@@ -45,7 +45,7 @@ The design protocol EvoBind-multimer is made available under the terms of the [C
 It is possible to run EvoBind-multimer online in the [Google colab here](https://colab.research.google.com/github/DiandraDaum/EvoBindMultimer/blob/main/EvoBindMultimer.ipynb)
 
 # Computational requirements
-Before beginning the process of setting up this pipeline on your local system, make sure you have adequate computational resources. Make sure you have an **available GPU** as this will speed up the prediction process substantially compared to using a CPU. EvoBind2 assumes you have NVIDIA GPUs on your system, readily available. A Linux-based system is assumed.
+Before beginning the process of setting up this pipeline on your local system, make sure you have adequate computational resources. Make sure you have an **available GPU** as this will speed up the prediction process substantially compared to using a CPU. EvoBind-multimer assumes you have NVIDIA GPUs on your system, readily available. A Linux-based system is assumed.
 
 # Setup
 To setup this pipeline, clone this github repository:
@@ -55,14 +55,15 @@ git clone https://github.com/patrickbryant1/EvoBind-multimer.git
 \
 Then do
 ```
+cd EvoBind-multimer
 bash setup.sh
 ```
 This script fetches the [AlphaFold2 parameters](https://storage.googleapis.com/alphafold/alphafold_params_2021-07-14.tar), installs a conda env and downloads [uniclust30_2018_08](http://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/uniclust30_2018_08_hhsuite.tar.gz) which is used to generate the receptor MSA.
 
 # Design Peptide Molecular Glues
 To design binders the following needs to be specified: \
-**target_1_fasta** \
-**target_2_fasta** \
+**FASTA1: protein target 1 amino acid sequence as .fasta** \
+**FASTA2: protein target 2 amino acid sequence as .fasta** \
 Optional arguments:
 \
 **Peptide length** - default=10 \
