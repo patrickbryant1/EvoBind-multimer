@@ -42,7 +42,7 @@ The design protocol EvoBind-multimer is made available under the terms of the [C
 **You may not use these files except in compliance with the licenses.**
 
 # Colab
-It is possible to run EvoBind-multimer online in the [Google colab here](https://colab.research.google.com/github/DiandraDaum/EvoBindMultimer/blob/main/EvoBindMultimer.ipynb)
+It is possible to run EvoBind-multimer online in the [Google colab here](https://colab.research.google.com/gist/patrickbryant1/6532b884c82c551abd9015b0a89fe140/evobind_multimer.ipynb)
 
 # Computational requirements
 Before beginning the process of setting up this pipeline on your local system, make sure you have adequate computational resources. Make sure you have an **available GPU** as this will speed up the prediction process substantially compared to using a CPU. EvoBind-multimer assumes you have NVIDIA GPUs on your system, readily available. A Linux-based system is assumed.
