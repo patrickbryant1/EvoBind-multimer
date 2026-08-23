@@ -9,7 +9,7 @@ EvoBind-multimer (EBM) designs novel linear and **cyclic** peptides bridging two
 We demonstrate molecular glue design with experimental validation between an E3 ligase and a target protein for the degradation of the "undruggable" oncoproteins KRAS and BRD4.
 \
 \
-[Read more here]()
+[Read more here](https://www.biorxiv.org/content/10.64898/2026.08.21.746227v1)
 \
 \
 EvoBind-multimer accounts for adaptation of the receptor interface structures to the peptide being designed during optimization: **sequence and structure is generated simultaneously**. This consideration of flexibility is crucial for binding. EvoBind-multimer is built on the ideas of [EvoBind2](https://github.com/patrickbryant1/EvoBind), the first protocol that only relies on a protein sequence to design a binder with experimentally verified cyclic design capacity.
@@ -81,7 +81,9 @@ bash design_local.sh
 # Citation
 If you use EvoBind-multimer in your research, please cite
 
-[Brunner A., Wierbilowicz K., Daumiller D., Li Q., Karlsson K., Sangfelt O. and Bryan P. De novo design of macrocyclic molecular glues from protein sequences. bioRxiv 2026.06..; doi:]()
+De novo Design of Macrocyclic Molecular Glues
+Andra Brunner, Krzysztof Wierbilowicz, Diandra Daumiller, Daniel Bexell, Kasper Karlsson, Olle Sangfelt, Patrick Bryant
+bioRxiv 2026.08.21.746227; doi: https://doi.org/10.64898/2026.08.21.746227
 
 # The EvoBind ecosystem
 [EvoBind](https://github.com/patrickbryant1/EvoBind) - designs novel [cyclic] peptide binders based **only on a protein target sequence**. \
