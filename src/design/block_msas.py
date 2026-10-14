@@ -90,4 +90,4 @@ fused[:a3m1.shape[0],:a3m1.shape[1]]=a3m1
 fused[a3m1.shape[0]:,a3m1.shape[1]:]=a3m2
 #Write the fused MSA
 write_a3m(fused, outname)
-print('Saved paired MSA to', outname)
+print('Saved blocked MSA to', outname)
